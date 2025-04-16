@@ -1,0 +1,150 @@
+[
+    {
+        "id": "farm1",
+        "name": "Fjäsen och Fjällan",
+        "description": "Discover the taste of rural Sweden with fresh, locally-sourced produce, homemade jams, and artisanal goods - straight from our farm to your table.",
+        "imageURL": "https://example.com/farm1.jpg",
+        "latitude": 47.6645,
+        "longitude": 9.2058,
+        "products": [
+            {
+                "id": "prod1",
+                "name": "Pasture-raised cattle",
+                "price": 49.90,
+                "unit": "kg",
+                "co2Reduction": 17,
+                "animalWelfareLevelID": "cow4",
+                "category": "cow"
+            },
+            {
+                "id": "prod2",
+                "name": "Organic eggs",
+                "price": 3.90,
+                "unit": "10 pieces",
+                "co2Reduction": 35,
+                "animalWelfareLevelID": "chicken4",
+                "category": "chicken"
+            },
+            {
+                "id": "prod3",
+                "name": "Seasonal vegetables",
+                "price": 2.50,
+                "unit": "kg",
+                "co2Reduction": 40,
+                "plantSustainabilityLevelID": "plant5",
+                "category": "vegetables"
+            }
+        ]
+    },
+    {
+        "id": "farm2",
+        "name": "Bodensee Bio-Hof",
+        "description": "Family-run organic farm specializing in apples, pears, and berries grown with regenerative farming methods that build soil health and support local biodiversity.",
+        "imageURL": "https://example.com/farm2.jpg",
+        "latitude": 47.6600,
+        "longitude": 9.1900,
+        "products": [
+            {
+                "id": "prod4",
+                "name": "Organic apples",
+                "price": 3.20,
+                "unit": "kg",
+                "co2Reduction": 45,
+                "plantSustainabilityLevelID": "plant4",
+                "category": "fruits"
+            },
+            {
+                "id": "prod5",
+                "name": "Organic pears",
+                "price": 3.50,
+                "unit": "kg",
+                "co2Reduction": 42,
+                "plantSustainabilityLevelID": "plant4",
+                "category": "fruits"
+            },
+            {
+                "id": "prod6",
+                "name": "Berry mix",
+                "price": 4.90,
+                "unit": "500g",
+                "co2Reduction": 38,
+                "plantSustainabilityLevelID": "plant5",
+                "category": "fruits"
+            }
+        ]
+    },
+    {
+        "id": "farm3",
+        "name": "Ravensburg Free Range",
+        "description": "Our heritage breed pigs and chickens roam freely on our 25-acre farm. We believe in animal-centered farming that produces exceptional quality meat while respecting natural behaviors.",
+        "imageURL": "https://example.com/farm3.jpg",
+        "latitude": 47.6800,
+        "longitude": 9.2200,
+        "products": [
+            {
+                "id": "prod7",
+                "name": "Free-range pork",
+                "price": 18.90,
+                "unit": "kg",
+                "co2Reduction": 22,
+                "animalWelfareLevelID": "pig5",
+                "category": "pig"
+            },
+            {
+                "id": "prod8",
+                "name": "Pasture-raised chicken",
+                "price": 14.50,
+                "unit": "kg",
+                "co2Reduction": 28,
+                "animalWelfareLevelID": "chicken5",
+                "category": "chicken"
+            },
+            {
+                "id": "prod9",
+                "name": "Organic chicken eggs",
+                "price": 4.20,
+                "unit": "dozen",
+                "co2Reduction": 33,
+                "animalWelfareLevelID": "chicken5",
+                "category": "chicken"
+            }
+        ]
+    },
+    {
+        "id": "farm4",
+        "name": "Lake View Dairy",
+        "description": "Third-generation dairy farm producing milk, cheese, and yogurt from our herd of grass-fed cows with stunning views of Lake Constance. Visitors welcome on weekends.",
+        "imageURL": "https://example.com/farm4.jpg",
+        "latitude": 47.6500,
+        "longitude": 9.1800,
+        "products": [
+            {
+                "id": "prod10",
+                "name": "Raw milk",
+                "price": 1.50,
+                "unit": "liter",
+                "co2Reduction": 15,
+                "animalWelfareLevelID": "cow3",
+                "category": "cow"
+            },
+            {
+                "id": "prod11",
+                "name": "Artisan cheese",
+                "price": 18.90,
+                "unit": "kg",
+                "co2Reduction": 10,
+                "animalWelfareLevelID": "cow3",
+                "category": "cow"
+            },
+            {
+                "id": "prod12",
+                "name": "Natural yogurt",
+                "price": 2.20,
+                "unit": "500g",
+                "co2Reduction": 12,
+                "animalWelfareLevelID": "cow3",
+                "category": "cow"
+            }
+        ]
+    }
+] 

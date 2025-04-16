@@ -1,0 +1,156 @@
+[
+    {
+        "id": "plant5",
+        "level": 5,
+        "title": "Regenerative and fair",
+        "description": "Farming works in harmony with nature using closed loops and mixed crops.",
+        "keyCharacteristics": [
+            "No-till or minimal tillage practices",
+            "Closed nutrient loops on farm",
+            "Cover crops and crop rotation",
+            "Fair working conditions and wages",
+            "Biodiversity enhancement"
+        ],
+        "plantCategory": null
+    },
+    {
+        "id": "plant4",
+        "level": 4,
+        "title": "Smart farming",
+        "description": "No synthetic chemicals, only organic fertilizers. Strong focus on healthy soils and sustainability.",
+        "keyCharacteristics": [
+            "Organic certified practices",
+            "Natural pest management",
+            "Water conservation techniques",
+            "Renewable energy use",
+            "Composting and natural fertilizers"
+        ],
+        "plantCategory": null
+    },
+    {
+        "id": "plant3",
+        "level": 3,
+        "title": "Organic standard",
+        "description": "Uses natural pest control and soil-friendly techniques. Efficient irrigation and more biodiversity.",
+        "keyCharacteristics": [
+            "No synthetic pesticides or fertilizers",
+            "Mechanical weed control",
+            "Integrated pest management",
+            "Soil health focus",
+            "More biodiversity than conventional"
+        ],
+        "plantCategory": null
+    },
+    {
+        "id": "plant2",
+        "level": 2,
+        "title": "Small steps",
+        "description": "Slightly reduced chemical input and better water management. Some measures to protect soil.",
+        "keyCharacteristics": [
+            "Reduced chemical inputs",
+            "Some integrated pest management",
+            "Improved water efficiency",
+            "Basic soil conservation",
+            "Some ecological focus areas"
+        ],
+        "plantCategory": null
+    },
+    {
+        "id": "plant1",
+        "level": 1,
+        "title": "Chemical overload",
+        "description": "Heavy pesticide use, synthetic fertilizers, and soil exhaustion. Water usage and biodiversity are minimal.",
+        "keyCharacteristics": [
+            "High synthetic pesticide use",
+            "Heavy synthetic fertilizer application",
+            "Minimal soil conservation",
+            "Inefficient water management",
+            "Monoculture practice"
+        ],
+        "plantCategory": null
+    },
+    {
+        "id": "vegetables5",
+        "level": 5,
+        "title": "Regenerative and fair",
+        "description": "Vegetables grown in regenerative systems with companion planting and minimal inputs.",
+        "keyCharacteristics": [
+            "Companion planting to reduce pests",
+            "Minimal soil disturbance",
+            "Diverse vegetable varieties including heritage",
+            "Local seed saving and propagation",
+            "Seasonal focus with no forced growing"
+        ],
+        "plantCategory": "vegetables"
+    },
+    {
+        "id": "vegetables4",
+        "level": 4,
+        "title": "Smart farming",
+        "description": "Organic vegetable production with focus on soil health and natural pest control.",
+        "keyCharacteristics": [
+            "Certified organic practices",
+            "Natural compost and soil amendments",
+            "Efficient drip irrigation",
+            "Seasonal selection of vegetables",
+            "Crop rotation to maintain soil health"
+        ],
+        "plantCategory": "vegetables"
+    },
+    {
+        "id": "fruits5",
+        "level": 5,
+        "title": "Regenerative and fair",
+        "description": "Fruit orchards managed as diverse ecosystems with minimal intervention.",
+        "keyCharacteristics": [
+            "Diverse orchard system with multiple species",
+            "Understory planting for biodiversity",
+            "Natural pest control through habitat",
+            "Heritage fruit varieties preserved",
+            "Rainwater harvesting for irrigation"
+        ],
+        "plantCategory": "fruits"
+    },
+    {
+        "id": "fruits4",
+        "level": 4,
+        "title": "Smart farming",
+        "description": "Organic fruit production with focus on soil health and natural pest management.",
+        "keyCharacteristics": [
+            "Organic certification",
+            "Integrated pest management",
+            "Mulching for water retention",
+            "Compost tea and natural sprays",
+            "Beneficial insect habitat"
+        ],
+        "plantCategory": "fruits"
+    },
+    {
+        "id": "grains5",
+        "level": 5,
+        "title": "Regenerative and fair",
+        "description": "Grains grown in regenerative systems with cover crops and minimal tillage.",
+        "keyCharacteristics": [
+            "No-till or minimal tillage",
+            "Cover crops between harvests",
+            "Heritage grain varieties",
+            "Diverse crop rotation",
+            "Natural processes for weed control"
+        ],
+        "plantCategory": "grains"
+    },
+    {
+        "id": "grains4",
+        "level": 4,
+        "title": "Smart farming",
+        "description": "Organic grain production with focus on soil health and natural fertility.",
+        "keyCharacteristics": [
+            "Organic certification",
+            "Mechanical weed control",
+            "Crop rotation with legumes",
+            "Green manures for soil fertility",
+            "Water conservation practices"
+        ],
+        "plantCategory": "grains"
+    }
+] 

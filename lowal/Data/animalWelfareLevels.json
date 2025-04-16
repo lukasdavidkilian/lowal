@@ -1,0 +1,212 @@
+[
+    {
+        "id": "cow5",
+        "level": 5,
+        "title": "Organic freedom",
+        "description": "Animals roam on pasture, eat organic feed, and live in low-stress environments.",
+        "keyCharacteristics": [
+            "Year-round grazing access when weather permits",
+            "100% organic feed with no GMOs",
+            "No routine antibiotics",
+            "Natural breeding preferred",
+            "Calves stay with mothers"
+        ],
+        "animalType": "cow"
+    },
+    {
+        "id": "cow4",
+        "level": 4,
+        "title": "High welfare",
+        "description": "Regular outdoor access, no routine mutilations. Focus on natural behavior and reduced antibiotics.",
+        "keyCharacteristics": [
+            "Regular grazing, 180+ days per year",
+            "Soft bedding, no permanent tethering",
+            "Mostly local, non-GMO feed",
+            "Only therapeutic antibiotics",
+            "Group-housed calves"
+        ],
+        "animalType": "cow"
+    },
+    {
+        "id": "cow3",
+        "level": 3,
+        "title": "Basic welfare",
+        "description": "Animals have more room, some daylight, and enrichment. Housing is improved as well.",
+        "keyCharacteristics": [
+            "Some seasonal pasture access",
+            "More space than conventional farming",
+            "Some enrichment provided",
+            "Reduced antibiotics use",
+            "Group housing for some part of life"
+        ],
+        "animalType": "cow"
+    },
+    {
+        "id": "cow2",
+        "level": 2,
+        "title": "Bare minimum",
+        "description": "Slight improvements like a bit more space or limited outdoor time. Some pain relief may be used.",
+        "keyCharacteristics": [
+            "Slightly larger stalls than minimum",
+            "Limited or no outdoor access",
+            "Pain relief for some procedures",
+            "Regular antibiotic use",
+            "Better air quality than standard"
+        ],
+        "animalType": "cow"
+    },
+    {
+        "id": "cow1",
+        "level": 1,
+        "title": "Torture camp",
+        "description": "Animals are kept in feedlots with little or no grazing and are fed large amounts of concentrated feed.",
+        "keyCharacteristics": [
+            "No outdoor access",
+            "Minimum legal space requirements",
+            "Routine preventative antibiotics",
+            "No enrichment",
+            "Feed designed for fast weight gain"
+        ],
+        "animalType": "cow"
+    },
+    {
+        "id": "pig5",
+        "level": 5,
+        "title": "Organic freedom",
+        "description": "Pigs live outdoors with access to shelters, forage naturally, and families stay together longer.",
+        "keyCharacteristics": [
+            "Outdoor access with mud wallows",
+            "Straw bedding and rooting areas",
+            "No routine tail docking or teeth clipping",
+            "Organic feed with forage options",
+            "Later weaning of piglets"
+        ],
+        "animalType": "pig"
+    },
+    {
+        "id": "pig4",
+        "level": 4,
+        "title": "High welfare",
+        "description": "Outdoor runs or deep bedding, enrichment materials, and no crates for sows.",
+        "keyCharacteristics": [
+            "Access to outdoors or deep bedding",
+            "Enrichment materials for rooting",
+            "No farrowing crates for mothers",
+            "Pain relief for necessary procedures",
+            "Reduced antibiotic use"
+        ],
+        "animalType": "pig"
+    },
+    {
+        "id": "pig3",
+        "level": 3,
+        "title": "Basic welfare",
+        "description": "More space, straw bedding, group housing for sows (except during farrowing).",
+        "keyCharacteristics": [
+            "More space than minimum requirements",
+            "Some bedding material provided",
+            "Group housing for most of life cycle",
+            "Better air quality standards",
+            "Improved handling practices"
+        ],
+        "animalType": "pig"
+    },
+    {
+        "id": "pig2",
+        "level": 2,
+        "title": "Bare minimum",
+        "description": "Small improvements over minimum, slightly more space, some enrichment materials.",
+        "keyCharacteristics": [
+            "Slightly more space than minimum",
+            "Some basic enrichment",
+            "Pain relief for some procedures",
+            "Regular antibiotic use",
+            "Conventional but improved housing"
+        ],
+        "animalType": "pig"
+    },
+    {
+        "id": "pig1",
+        "level": 1,
+        "title": "Torture camp",
+        "description": "Pigs kept in barren pens, sows in gestation crates, routine tail docking without pain relief.",
+        "keyCharacteristics": [
+            "Minimum legal space requirements",
+            "Barren environment with slatted floors",
+            "Routine use of gestation crates",
+            "No enrichment materials",
+            "Routine mutilations without pain relief"
+        ],
+        "animalType": "pig"
+    },
+    {
+        "id": "chicken5",
+        "level": 5,
+        "title": "Organic freedom",
+        "description": "Birds range freely outdoors, forage naturally, and live in small flocks with ample space.",
+        "keyCharacteristics": [
+            "Daily outdoor access with vegetation",
+            "Low stocking density indoors and out",
+            "Slower-growing breeds with better health",
+            "No beak trimming",
+            "Organic feed with forage component"
+        ],
+        "animalType": "chicken"
+    },
+    {
+        "id": "chicken4",
+        "level": 4,
+        "title": "High welfare",
+        "description": "Free-range access, enrichment items indoors, and more space per bird than conventional.",
+        "keyCharacteristics": [
+            "Access to outdoor range",
+            "Lower stocking density",
+            "Enrichment like perches and pecking objects",
+            "Natural light in houses",
+            "Reduced antibiotic use"
+        ],
+        "animalType": "chicken"
+    },
+    {
+        "id": "chicken3",
+        "level": 3,
+        "title": "Basic welfare",
+        "description": "Better indoor conditions with natural light, perches, and dust bathing areas.",
+        "keyCharacteristics": [
+            "No outdoor access but improved indoor environment",
+            "Natural light in barns",
+            "Enrichment including dust bathing areas",
+            "Slightly reduced stocking density",
+            "Better air quality management"
+        ],
+        "animalType": "chicken"
+    },
+    {
+        "id": "chicken2",
+        "level": 2,
+        "title": "Bare minimum",
+        "description": "Small improvements to conventional systems, slightly lower stocking density.",
+        "keyCharacteristics": [
+            "Conventional barn system with minor improvements",
+            "Slightly more space per bird",
+            "Minimal enrichment",
+            "Regular health monitoring",
+            "Standard rapid-growth breeds"
+        ],
+        "animalType": "chicken"
+    },
+    {
+        "id": "chicken1",
+        "level": 1,
+        "title": "Torture camp",
+        "description": "Birds kept in overcrowded conditions with poor air quality and no enrichment.",
+        "keyCharacteristics": [
+            "Maximum legal stocking density",
+            "No enrichment or natural light",
+            "Poor air quality",
+            "Beak trimming without pain relief",
+            "Rapid growth leading to health problems"
+        ],
+        "animalType": "chicken"
+    }
+] 
