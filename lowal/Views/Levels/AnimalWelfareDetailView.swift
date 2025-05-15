@@ -8,8 +8,8 @@ struct AnimalWelfareDetailView: View {
             VStack(alignment: .leading, spacing: 24) {
                 // Header with badge and title
                 HStack(spacing: 16) {
-                    LevelBadgeView(level: level.level, category: categoryForAnimalType)
-                        .frame(width: 60, height: 60)
+                    AnimalLevelIconView(level: level.level, animalType: level.animalType)
+                        .frame(width: 80, height: 80)
                     
                     VStack(alignment: .leading, spacing: 4) {
                         Text("\(level.level) \(level.title)")
@@ -63,14 +63,6 @@ struct AnimalWelfareDetailView: View {
         }
         .navigationTitle("\(getAnimalName(for: level.animalType)) - \(level.level) \(level.title)")
         .navigationBarTitleDisplayMode(.inline)
-    }
-    
-    private var categoryForAnimalType: LevelBadgeView.BadgeCategory {
-        switch level.animalType {
-        case .cow: return .cow
-        case .pig: return .pig
-        case .chicken: return .chicken
-        }
     }
     
     private func getAnimalName(for type: AnimalWelfareLevel.AnimalType) -> String {

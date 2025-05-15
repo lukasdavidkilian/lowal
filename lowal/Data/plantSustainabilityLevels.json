@@ -98,6 +98,48 @@
         "plantCategory": "vegetables"
     },
     {
+        "id": "vegetables3",
+        "level": 3,
+        "title": "Organic standard",
+        "description": "Uses natural pest control and soil-friendly techniques for vegetable growing.",
+        "keyCharacteristics": [
+            "No synthetic pesticides or fertilizers",
+            "Manual or mechanical weed control",
+            "Integrated pest management for vegetables",
+            "Some crop rotation practices",
+            "Higher biodiversity than conventional farms"
+        ],
+        "plantCategory": "vegetables"
+    },
+    {
+        "id": "vegetables2",
+        "level": 2,
+        "title": "Small steps",
+        "description": "Slightly reduced chemical input for vegetables with some soil protection measures.",
+        "keyCharacteristics": [
+            "Reduced pesticide use on vegetables",
+            "Some natural fertilizer supplementation",
+            "Basic water conservation measures",
+            "Limited crop rotation",
+            "Some buffer zones around fields"
+        ],
+        "plantCategory": "vegetables"
+    },
+    {
+        "id": "vegetables1",
+        "level": 1,
+        "title": "Chemical overload",
+        "description": "Heavy pesticide use on vegetables with frequent applications and monocropping.",
+        "keyCharacteristics": [
+            "Regular preventative pesticide application",
+            "Heavy synthetic fertilizer use",
+            "Single-crop vegetable fields",
+            "Minimal concern for soil health",
+            "High water usage with inefficient irrigation"
+        ],
+        "plantCategory": "vegetables"
+    },
+    {
         "id": "fruits5",
         "level": 5,
         "title": "Regenerative and fair",
@@ -126,6 +168,48 @@
         "plantCategory": "fruits"
     },
     {
+        "id": "fruits3",
+        "level": 3,
+        "title": "Organic standard",
+        "description": "Fruit production with natural pest control methods and reduced environmental impact.",
+        "keyCharacteristics": [
+            "No synthetic pesticides on fruit trees",
+            "Organic fertilizers and soil amendments",
+            "Drip irrigation systems",
+            "Some biodiversity in orchard layout",
+            "Mechanical weed control methods"
+        ],
+        "plantCategory": "fruits"
+    },
+    {
+        "id": "fruits2",
+        "level": 2,
+        "title": "Small steps",
+        "description": "Reduced chemical use in fruit production with some sustainability measures.",
+        "keyCharacteristics": [
+            "Decreased chemical spray frequency",
+            "Some integrated pest management",
+            "More efficient water use",
+            "Limited diversity in orchard layout",
+            "Some soil conservation efforts"
+        ],
+        "plantCategory": "fruits"
+    },
+    {
+        "id": "fruits1",
+        "level": 1,
+        "title": "Chemical overload",
+        "description": "High-intensity fruit production with regular chemical spraying and monoculture orchards.",
+        "keyCharacteristics": [
+            "Frequent pesticide application schedule",
+            "Heavy synthetic fertilizer use",
+            "Single variety fruit orchards",
+            "Bare soil beneath trees",
+            "High water usage with inefficient systems"
+        ],
+        "plantCategory": "fruits"
+    },
+    {
         "id": "grains5",
         "level": 5,
         "title": "Regenerative and fair",
@@ -150,6 +234,48 @@
             "Crop rotation with legumes",
             "Green manures for soil fertility",
             "Water conservation practices"
+        ],
+        "plantCategory": "grains"
+    },
+    {
+        "id": "grains3",
+        "level": 3,
+        "title": "Organic standard",
+        "description": "Grain production without synthetic chemicals and with better land management.",
+        "keyCharacteristics": [
+            "No synthetic pesticides used on grains",
+            "Organic fertilizer application",
+            "Some crop rotation practices",
+            "Reduced tillage when possible",
+            "Better soil management than conventional"
+        ],
+        "plantCategory": "grains"
+    },
+    {
+        "id": "grains2",
+        "level": 2,
+        "title": "Small steps",
+        "description": "Slightly improved grain production with reduced chemical inputs and some soil conservation.",
+        "keyCharacteristics": [
+            "Reduced chemical application rates",
+            "Some precision agriculture techniques",
+            "Basic soil conservation measures",
+            "Limited crop rotation",
+            "Some buffer zones around fields"
+        ],
+        "plantCategory": "grains"
+    },
+    {
+        "id": "grains1",
+        "level": 1,
+        "title": "Chemical overload",
+        "description": "Intensive grain monoculture with heavy reliance on synthetic inputs and minimal sustainability.",
+        "keyCharacteristics": [
+            "Heavy pesticide and herbicide use",
+            "High synthetic fertilizer application",
+            "Annual deep tillage practices",
+            "Single crop growing with no rotation",
+            "Minimal buffer zones or biodiversity areas"
         ],
         "plantCategory": "grains"
     }

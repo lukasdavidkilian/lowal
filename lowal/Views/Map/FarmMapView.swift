@@ -136,17 +136,6 @@ private struct SearchBar: View {
 private struct BottomControls: View {
     var body: some View {
         HStack {
-            NavigationLink(destination: AnimalWelfareListView(animalType: .cow)) {
-                Text("Levels")
-                    .font(.headline)
-                    .padding(12)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12)
-                            .fill(Color.white)
-                            .shadow(radius: 2)
-                    )
-            }
-            
             Spacer()
             
             Button(action: {
