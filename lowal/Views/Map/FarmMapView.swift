@@ -13,10 +13,6 @@ struct FarmMapView: View {
             ZStack {
                 MapViewContent(mapRegion: $mapRegion, viewModel: viewModel)
                 SearchAndControlsOverlay(viewModel: viewModel)
-                
-                if let selectedFarm = viewModel.selectedFarm {
-                    FarmSelectionOverlay(farm: selectedFarm, viewModel: viewModel)
-                }
             }
             .navigationTitle("Lowal")
             .navigationBarTitleDisplayMode(.inline)
@@ -32,9 +28,7 @@ private struct MapViewContent: View {
     var body: some View {
         Map(coordinateRegion: $mapRegion, annotationItems: viewModel.filteredFarms) { farm in
             MapAnnotation(coordinate: farm.coordinate) {
-                Button(action: {
-                    viewModel.selectFarm(farm)
-                }) {
+                NavigationLink(destination: FarmDetailView(farm: farm)) {
                     FarmAnnotationView(farm: farm, viewModel: viewModel)
                 }
             }
@@ -64,7 +58,7 @@ private struct FarmAnnotationView: View {
                     .frame(width: 40, height: 40)
                     .clipShape(Circle())
                 } else {
-                    Image(systemName: "house.fill")
+                    Text("🏡")
                         .font(.system(size: 24))
                 }
             }
@@ -152,64 +146,6 @@ private struct BottomControls: View {
             }
         }
         .padding()
-    }
-}
-
-// MARK: - Farm Selection Overlay
-private struct FarmSelectionOverlay: View {
-    let farm: Farm
-    @ObservedObject var viewModel: FarmMapViewModel
-    
-    var body: some View {
-        VStack {
-            Spacer()
-            
-            VStack(alignment: .leading) {
-                HStack {
-                    Text(farm.name)
-                        .font(.headline)
-                    
-                    Spacer()
-                    
-                    Button(action: {
-                        viewModel.clearSelection()
-                    }) {
-                        Image(systemName: "xmark.circle.fill")
-                            .foregroundColor(.gray)
-                    }
-                }
-                
-                Text(farm.description)
-                    .font(.subheadline)
-                    .lineLimit(2)
-                
-                HStack {
-                    NavigationLink(destination: FarmDetailView(farm: farm)) {
-                        Text("View details")
-                            .font(.subheadline)
-                            .padding(.vertical, 8)
-                            .padding(.horizontal, 16)
-                            .background(Color.blue)
-                            .foregroundColor(.white)
-                            .cornerRadius(8)
-                    }
-                    
-                    Spacer()
-                    
-                    if let firstProduct = farm.products.first,
-                       let co2Reduction = firstProduct.co2Reduction {
-                        CO2BadgeView(reduction: co2Reduction)
-                    }
-                }
-            }
-            .padding()
-            .background(
-                RoundedRectangle(cornerRadius: 12)
-                    .fill(Color.white)
-                    .shadow(radius: 4)
-            )
-            .padding()
-        }
     }
 }
 

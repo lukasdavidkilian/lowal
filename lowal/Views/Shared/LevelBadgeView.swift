@@ -12,24 +12,24 @@ struct LevelBadgeView: View, Hashable {
     }
     
     var body: some View {
-        ZStack {
-            Circle()
-                .fill(backgroundColor)
-                .frame(width: 32, height: 32)
+        HStack(spacing: 1) {
+            Text(emojiIcon)
+                .font(.system(size: 16))
             
-            HStack(spacing: 2) {
-                Image(systemName: iconName)
-                    .font(.system(size: 10))
-                    .foregroundColor(.white)
-                
-                Text("\(level)")
-                    .font(.system(size: 12, weight: .bold))
-                    .foregroundColor(.white)
-            }
+            Text("\(level)")
+                .font(.system(size: 14, weight: .bold))
+                .foregroundColor(levelColor)
         }
+        .padding(.horizontal, 4)
+        .padding(.vertical, 2)
+        .background(
+            RoundedRectangle(cornerRadius: 8)
+                .fill(Color.white)
+                .shadow(radius: 1)
+        )
     }
     
-    private var backgroundColor: Color {
+    private var levelColor: Color {
         switch level {
         case 5: return Color.green
         case 4: return Color.mint
@@ -40,12 +40,12 @@ struct LevelBadgeView: View, Hashable {
         }
     }
     
-    private var iconName: String {
+    private var emojiIcon: String {
         switch category {
-        case .cow: return "hare.fill"
-        case .pig: return "pawprint.fill"
-        case .chicken: return "bird.fill"
-        case .plant: return "leaf.fill"
+        case .cow: return "🐄"
+        case .pig: return "🐖"
+        case .chicken: return "🐓"
+        case .plant: return "🌱"
         }
     }
     
