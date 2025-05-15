@@ -4,7 +4,7 @@ import MapKit
 struct FarmMapView: View {
     @StateObject private var viewModel = FarmMapViewModel()
     @State private var mapRegion = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 47.6645, longitude: 9.2058),
+        center: CLLocationCoordinate2D(latitude: 47.8066, longitude: 9.6479), // Weingarten 88250
         span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     )
     

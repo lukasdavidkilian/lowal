@@ -5,7 +5,7 @@ import CoreLocation
 class FarmMapViewModel: ObservableObject {
     @Published var farms: [Farm] = []
     @Published var selectedFarm: Farm?
-    @Published var region = CLLocationCoordinate2D(latitude: 47.6645, longitude: 9.2058) // Weingarten am Bodensee
+    @Published var region = CLLocationCoordinate2D(latitude: 47.8066, longitude: 9.6479) // Weingarten 88250
     @Published var searchText: String = ""
     
     private var animalWelfareLevels: [AnimalWelfareLevel] = []
