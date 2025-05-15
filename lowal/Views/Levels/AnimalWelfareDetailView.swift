@@ -8,25 +8,52 @@ struct AnimalWelfareDetailView: View {
             VStack(alignment: .leading, spacing: 24) {
                 // Header with badge and title
                 HStack(spacing: 16) {
-                    AnimalLevelIconView(level: level.level, animalType: level.animalType)
-                        .frame(width: 80, height: 80)
+                    // Level icon with animal emoji
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 12)
+                            .fill(getLevelColor())
+                            .frame(width: 80, height: 80)
+                        
+                        // Animal emoji
+                        Text(getAnimalEmoji())
+                            .font(.system(size: 40))
+                    }
                     
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text("\(level.level) \(level.title)")
-                            .font(.title2)
-                            .fontWeight(.bold)
+                    VStack(alignment: .leading, spacing: 8) {
+                        HStack(spacing: 8) {
+                            // Level circle
+                            ZStack {
+                                Circle()
+                                    .fill(getLevelColor().opacity(0.2))
+                                    .frame(width: 32, height: 32)
+                                
+                                Text("\(level.level)")
+                                    .font(.system(size: 18, weight: .bold))
+                                    .foregroundColor(getLevelColor())
+                            }
+                            
+                            Text(level.title)
+                                .font(.title2)
+                                .fontWeight(.bold)
+                        }
                         
                         Text(getAnimalName(for: level.animalType))
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                     }
                 }
-                .padding(.bottom, 8)
+                .padding(.bottom, 16)
                 
                 // Description
                 Text(level.description)
                     .font(.body)
                     .padding(.bottom, 16)
+                
+                // Divider
+                Rectangle()
+                    .fill(Color.secondary.opacity(0.2))
+                    .frame(height: 1)
+                    .padding(.vertical, 8)
                 
                 // Key characteristics
                 Text("Key characteristics")
@@ -37,7 +64,7 @@ struct AnimalWelfareDetailView: View {
                     ForEach(level.keyCharacteristics, id: \.self) { characteristic in
                         HStack(alignment: .top, spacing: 12) {
                             Image(systemName: "checkmark.circle.fill")
-                                .foregroundColor(.green)
+                                .foregroundColor(getLevelColor())
                                 .font(.system(size: 18))
                             
                             Text(characteristic)
@@ -60,16 +87,18 @@ struct AnimalWelfareDetailView: View {
                 Spacer()
             }
             .padding()
+            .background(Color.white)
         }
-        .navigationTitle("\(getAnimalName(for: level.animalType)) - \(level.level) \(level.title)")
+        .background(Color.white)
+        .navigationTitle("\(getAnimalName(for: level.animalType)) - Level \(level.level)")
         .navigationBarTitleDisplayMode(.inline)
     }
     
     private func getAnimalName(for type: AnimalWelfareLevel.AnimalType) -> String {
         switch type {
-        case .cow: return "Cow"
-        case .pig: return "Pig"
-        case .chicken: return "Chicken"
+        case .cow: return "Cow welfare"
+        case .pig: return "Pig welfare"
+        case .chicken: return "Chicken welfare"
         }
     }
     
@@ -78,6 +107,25 @@ struct AnimalWelfareDetailView: View {
         case .cow: return "cows"
         case .pig: return "pigs"
         case .chicken: return "chickens"
+        }
+    }
+    
+    private func getAnimalEmoji() -> String {
+        switch level.animalType {
+        case .cow: return "🐄"
+        case .pig: return "🐖"
+        case .chicken: return "🐓"
+        }
+    }
+    
+    private func getLevelColor() -> Color {
+        switch level.level {
+        case 5: return .green
+        case 4: return Color(red: 0.2, green: 0.6, blue: 0.2)
+        case 3: return .yellow
+        case 2: return .orange
+        case 1: return .red
+        default: return .gray
         }
     }
 } 

@@ -9,10 +9,10 @@ struct AnimalWelfareListView: View {
     }
     
     var body: some View {
-        List {
-            // Animal type picker is hidden by default now that we have a dedicated overview screen
-            if showAnimalTypePicker {
-                Section {
+        ScrollView {
+            VStack(spacing: 16) {
+                // Animal type picker is hidden by default now that we have a dedicated overview screen
+                if showAnimalTypePicker {
                     Picker("Animal Type", selection: $viewModel.selectedAnimalType) {
                         Text("Cow").tag(AnimalWelfareLevel.AnimalType.cow)
                         Text("Pig").tag(AnimalWelfareLevel.AnimalType.pig)
@@ -21,47 +21,31 @@ struct AnimalWelfareListView: View {
                     .pickerStyle(SegmentedPickerStyle())
                     .padding(.vertical, 8)
                 }
-            }
-            
-            ForEach(viewModel.filteredLevels) { level in
-                NavigationLink(destination: AnimalWelfareDetailView(level: level)) {
-                    HStack(spacing: 16) {
-                        AnimalLevelIconView(level: level.level, animalType: viewModel.selectedAnimalType)
-                            .frame(width: 60, height: 60)
-                        
-                        VStack(alignment: .leading, spacing: 4) {
-                            HStack {
-                                Text("\(level.level) \(level.title)")
-                                    .font(.headline)
-                                    .foregroundColor(.textLowal)
-                            }
-                            
-                            Text(level.description)
-                                .font(.subheadline)
-                                .foregroundColor(.textLowal.opacity(0.7))
-                                .lineLimit(2)
-                        }
-                        
-                        Spacer()
+                
+                // Animal welfare level cards
+                ForEach(viewModel.filteredLevels) { level in
+                    NavigationLink(destination: AnimalWelfareDetailView(level: level)) {
+                        LevelCardView(
+                            level: level.level,
+                            title: level.title,
+                            description: level.description,
+                            type: .animal(mapAnimalType(level.animalType))
+                        )
                     }
-                    .padding(.vertical, 8)
-                    .background(Color.backgroundLowal)
+                    .buttonStyle(PlainButtonStyle())
                 }
-                .buttonStyle(PlainButtonStyle())
-                .listRowBackground(Color.backgroundLowal)
-            }
-            
-            Section {
+                
                 Text("This overview simplifies complex practices to make them easier to understand. It's not perfect, but it's a starting point.")
                     .font(.caption)
-                    .foregroundColor(.textLowal.opacity(0.6))
-                    .padding(.vertical, 8)
+                    .foregroundColor(.secondary)
+                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .center)
             }
+            .padding()
         }
-        .listStyle(InsetGroupedListStyle())
+        .background(Color.white)
         .navigationTitle(getNavigationTitle())
         .navigationBarTitleDisplayMode(.inline)
-        .background(Color.backgroundLowal)
     }
     
     private func getNavigationTitle() -> String {
@@ -74,55 +58,16 @@ struct AnimalWelfareListView: View {
             return "Chicken welfare levels"
         }
     }
+    
+    // Helper function to map from model animal type to LevelCardView animal type
+    private func mapAnimalType(_ type: AnimalWelfareLevel.AnimalType) -> LevelCardView.AnimalType {
+        switch type {
+        case .cow: return .cow
+        case .pig: return .pig
+        case .chicken: return .chicken
+        }
+    }
 }
 
-// New component for larger animal icons as shown in the screenshot
-struct AnimalLevelIconView: View {
-    let level: Int
-    let animalType: AnimalWelfareLevel.AnimalType
-    
-    var body: some View {
-        ZStack(alignment: .topLeading) {
-            // Animal image based on level and type
-            Image(systemName: getAnimalIconName())
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .foregroundColor(getLevelColor())
-                .padding(5)
-            
-            // Level badge in corner
-            ZStack {
-                Circle()
-                    .fill(getLevelColor())
-                    .frame(width: 24, height: 24)
-                
-                Text("\(level)")
-                    .font(.system(size: 14, weight: .bold))
-                    .foregroundColor(.white)
-            }
-            .offset(x: -5, y: -5)
-        }
-    }
-    
-    private func getAnimalIconName() -> String {
-        switch animalType {
-        case .cow:
-            return "hare.fill" // Placeholder, would be a cow icon in real implementation
-        case .pig:
-            return "pawprint.fill" // Placeholder, would be a pig icon
-        case .chicken:
-            return "bird.fill" // Placeholder for chicken
-        }
-    }
-    
-    private func getLevelColor() -> Color {
-        switch level {
-        case 5: return Color.level5
-        case 4: return Color.level4
-        case 3: return Color.level3
-        case 2: return Color.level2
-        case 1: return Color.level1
-        default: return Color.gray
-        }
-    }
-} 
+// We're now using the shared LevelCardView, so this component can be removed
+// struct AnimalLevelIconView: View { ... } 
