@@ -1,15 +1,15 @@
 [
     {
         "id": "farm1",
-        "name": "Weingarten Bio-Hofladen",
-        "description": "Familienbetriebener Bio-Hofladen im Herzen von Weingarten mit frischem Gemüse, Obst und regionalen Produkten direkt vom Erzeuger.",
+        "name": "Weingarten Organic Farm Shop",
+        "description": "Family-run organic farm shop in the heart of Weingarten with fresh vegetables, fruits, and regional products directly from the producer.",
         "imageURL": "https://example.com/farm1.jpg",
         "latitude": 47.8066,
         "longitude": 9.6479,
         "products": [
             {
                 "id": "prod1",
-                "name": "Weidefleisch Rind",
+                "name": "Pasture-raised Beef",
                 "price": 49.90,
                 "unit": "kg",
                 "co2Reduction": 17,
@@ -18,16 +18,16 @@
             },
             {
                 "id": "prod2",
-                "name": "Bio-Eier",
+                "name": "Organic Eggs",
                 "price": 3.90,
-                "unit": "10 Stück",
+                "unit": "10 pcs",
                 "co2Reduction": 35,
                 "animalWelfareLevelID": "chicken4",
                 "category": "chicken"
             },
             {
                 "id": "prod3",
-                "name": "Saisonales Gemüse",
+                "name": "Seasonal Vegetables",
                 "price": 2.50,
                 "unit": "kg",
                 "co2Reduction": 40,
@@ -38,15 +38,15 @@
     },
     {
         "id": "farm2",
-        "name": "Ravensburger Obstgarten",
-        "description": "Obstbaubetrieb mit traditionellen und alten Apfelsorten. Unser Hofladen bietet frisches Obst, hausgemachte Säfte und Obstbrände aus eigener Herstellung.",
+        "name": "Ravensburg Orchard",
+        "description": "Fruit farming operation with traditional and heritage apple varieties. Our farm shop offers fresh fruit, homemade juices, and fruit spirits from our own production.",
         "imageURL": "https://example.com/farm2.jpg",
         "latitude": 47.7813,
         "longitude": 9.6134,
         "products": [
             {
                 "id": "prod4",
-                "name": "Bio-Äpfel",
+                "name": "Organic Apples",
                 "price": 3.20,
                 "unit": "kg",
                 "co2Reduction": 45,
@@ -55,7 +55,7 @@
             },
             {
                 "id": "prod5",
-                "name": "Bio-Birnen",
+                "name": "Organic Pears",
                 "price": 3.50,
                 "unit": "kg",
                 "co2Reduction": 42,
@@ -64,7 +64,7 @@
             },
             {
                 "id": "prod6",
-                "name": "Beerenmischung",
+                "name": "Mixed Berries",
                 "price": 4.90,
                 "unit": "500g",
                 "co2Reduction": 38,
@@ -75,15 +75,15 @@
     },
     {
         "id": "farm3",
-        "name": "Baienfurter Freilandhof",
-        "description": "Unsere alten Schweinerassen und Hühner leben artgerecht auf unseren weitläufigen Weiden. Wir praktizieren eine tiergerechte Landwirtschaft mit höchster Fleischqualität.",
+        "name": "Baienfurt Free-range Farm",
+        "description": "Our heritage pig breeds and chickens live freely on our expansive pastures. We practice animal-centered farming that delivers exceptional meat quality while respecting natural behaviors.",
         "imageURL": "https://example.com/farm3.jpg",
         "latitude": 47.8301,
         "longitude": 9.6372,
         "products": [
             {
                 "id": "prod7",
-                "name": "Freiland-Schweinefleisch",
+                "name": "Free-range Pork",
                 "price": 18.90,
                 "unit": "kg",
                 "co2Reduction": 22,
@@ -92,7 +92,7 @@
             },
             {
                 "id": "prod8",
-                "name": "Weidehähnchen",
+                "name": "Pasture-raised Chicken",
                 "price": 14.50,
                 "unit": "kg",
                 "co2Reduction": 28,
@@ -101,9 +101,9 @@
             },
             {
                 "id": "prod9",
-                "name": "Bio-Eier vom Freiland",
+                "name": "Free-range Organic Eggs",
                 "price": 4.20,
-                "unit": "Dutzend",
+                "unit": "dozen",
                 "co2Reduction": 33,
                 "animalWelfareLevelID": "chicken5",
                 "category": "chicken"
@@ -112,24 +112,24 @@
     },
     {
         "id": "farm4",
-        "name": "Berger Milchhof",
-        "description": "Familienbetrieb in dritter Generation mit Milchkühen auf Weidehaltung. Wir produzieren Milch, Käse und Joghurt nach traditionellen Rezepten. Besichtigungen am Wochenende möglich.",
+        "name": "Berg Dairy Farm",
+        "description": "Third-generation family farm with grass-fed dairy cows. We produce milk, cheese, and yogurt according to traditional recipes. Farm tours available on weekends.",
         "imageURL": "https://example.com/farm4.jpg",
         "latitude": 47.8211,
         "longitude": 9.6651,
         "products": [
             {
                 "id": "prod10",
-                "name": "Rohmilch",
+                "name": "Raw Milk",
                 "price": 1.50,
-                "unit": "Liter",
+                "unit": "liter",
                 "co2Reduction": 15,
                 "animalWelfareLevelID": "cow3",
                 "category": "cow"
             },
             {
                 "id": "prod11",
-                "name": "Handwerkskäse",
+                "name": "Artisanal Cheese",
                 "price": 18.90,
                 "unit": "kg",
                 "co2Reduction": 10,
@@ -138,7 +138,7 @@
             },
             {
                 "id": "prod12",
-                "name": "Naturjoghurt",
+                "name": "Natural Yogurt",
                 "price": 2.20,
                 "unit": "500g",
                 "co2Reduction": 12,
@@ -149,15 +149,15 @@
     },
     {
         "id": "farm5",
-        "name": "Schlier Kornkammer",
-        "description": "Getreidehof mit eigenem Backhaus. Wir bauen alte Getreidesorten an und verarbeiten sie zu Mehl, Brot und Backwaren in unserer hofeigenen Bäckerei.",
+        "name": "Schlier Grain House",
+        "description": "Grain farm with its own bakehouse. We grow heritage grain varieties and process them into flour, bread, and baked goods in our on-farm bakery.",
         "imageURL": "https://example.com/farm5.jpg",
         "latitude": 47.7758,
         "longitude": 9.6886,
         "products": [
             {
                 "id": "prod13",
-                "name": "Dinkelmehl",
+                "name": "Spelt Flour",
                 "price": 2.80,
                 "unit": "kg",
                 "co2Reduction": 20,
@@ -166,16 +166,16 @@
             },
             {
                 "id": "prod14",
-                "name": "Sauerteigbrot",
+                "name": "Sourdough Bread",
                 "price": 4.50,
-                "unit": "Stück",
+                "unit": "loaf",
                 "co2Reduction": 25,
                 "plantSustainabilityLevelID": "grains5",
                 "category": "grains"
             },
             {
                 "id": "prod15",
-                "name": "Bio-Haferflocken",
+                "name": "Organic Oats",
                 "price": 2.90,
                 "unit": "500g",
                 "co2Reduction": 30,
@@ -186,24 +186,24 @@
     },
     {
         "id": "farm6",
-        "name": "Wolfegg Gemüsegarten",
-        "description": "Biologisch-dynamischer Gemüseanbau mit Schwerpunkt auf Vielfalt und Geschmack. Wir kultivieren über 60 verschiedene Gemüsesorten und bieten eine Gemüsekiste zum Abonnieren an.",
+        "name": "Wolfegg Vegetable Garden",
+        "description": "Biodynamic vegetable farm focused on diversity and flavor. We cultivate over 60 different vegetable varieties and offer a vegetable box subscription service.",
         "imageURL": "https://example.com/farm6.jpg",
         "latitude": 47.8336,
         "longitude": 9.7946,
         "products": [
             {
                 "id": "prod16",
-                "name": "Demeter Gemüsekiste",
+                "name": "Demeter Vegetable Box",
                 "price": 15.00,
-                "unit": "Stück",
+                "unit": "box",
                 "co2Reduction": 50,
                 "plantSustainabilityLevelID": "vegetables5",
                 "category": "vegetables"
             },
             {
                 "id": "prod17",
-                "name": "Alte Tomatensorten",
+                "name": "Heritage Tomatoes",
                 "price": 4.90,
                 "unit": "kg",
                 "co2Reduction": 45,
@@ -212,9 +212,9 @@
             },
             {
                 "id": "prod18",
-                "name": "Kräuterbund gemischt",
+                "name": "Mixed Herb Bundle",
                 "price": 2.50,
-                "unit": "Bund",
+                "unit": "bunch",
                 "co2Reduction": 35,
                 "plantSustainabilityLevelID": "vegetables4",
                 "category": "vegetables"
@@ -223,15 +223,15 @@
     },
     {
         "id": "farm7",
-        "name": "Wilhelmsdorf Biohof",
-        "description": "Vielseitiger Biobetrieb mit Rinderhaltung, Gemüseanbau und eigener Käserei. Wir arbeiten nach Bioland-Richtlinien und legen Wert auf Kreislaufwirtschaft.",
+        "name": "Wilhelmsdorf Organic Farm",
+        "description": "Versatile organic operation with cattle farming, vegetable growing, and our own cheese dairy. We work according to Bioland guidelines and value circular farming practices.",
         "imageURL": "https://example.com/farm7.jpg",
         "latitude": 47.8692,
         "longitude": 9.4180,
         "products": [
             {
                 "id": "prod19",
-                "name": "Bioland Rindfleisch",
+                "name": "Bioland Beef",
                 "price": 22.90,
                 "unit": "kg",
                 "co2Reduction": 30,
@@ -240,7 +240,7 @@
             },
             {
                 "id": "prod20",
-                "name": "Hofkäse",
+                "name": "Farm Cheese",
                 "price": 16.80,
                 "unit": "kg",
                 "co2Reduction": 25,
@@ -249,7 +249,7 @@
             },
             {
                 "id": "prod21",
-                "name": "Saisonales Wurzelgemüse",
+                "name": "Seasonal Root Vegetables",
                 "price": 2.80,
                 "unit": "kg",
                 "co2Reduction": 40,
