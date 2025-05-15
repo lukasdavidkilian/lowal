@@ -78,10 +78,6 @@ struct FarmDetailView: View {
                     VStack(alignment: .leading, spacing: 4) {
                         Text(product.name)
                             .font(.subheadline)
-                        
-                        if let co2Reduction = product.co2Reduction {
-                            CO2BadgeView(reduction: co2Reduction)
-                        }
                     }
                     
                     Spacer()
